@@ -1,0 +1,279 @@
+/* import fonts from fonts.css */
+@import url(./fonts.css);
+/* css variables */
+@import url(./partials/_variables.css);
+/* import global styling */
+@import url(./partials/_global.css);
+/* start navigation */
+.header.main-menu .navbar .navbar-brand {
+  padding: 0 2rem 0 5rem;
+}
+.header .main-menu .navbar {
+  padding: 1rem 20rem;
+}
+.header .main-menu .nav-item .nav-link {
+  font: normal 500 15px/2px var(--roboto);
+  text-transform: uppercase;
+  padding: 1.7rem;
+  color: var(--title-color);
+}
+.header .main-menu .navbar-nav .active {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header .main-menu .navbar-nav a:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* end navigation */
+
+/* start banner */
+.site-main .site-banner {
+  background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+}
+.site-main .site-banner .site-title h3 {
+  padding-top: 35%;
+  font-weight: 500;
+}
+.site-main .site-banner .site-title h3::after {
+  content: "";
+  width: 18vw;
+  height: 2px;
+  background: black;
+  display: inline-block;
+  margin-left: 5%;
+  transform: translateY(-10px);
+}
+.site-main .site-banner .site-title h1 {
+  font-size: 5rem;
+}
+.site-main .site-banner .site-title h4 {
+  font-size: 1.5rem;
+}
+.site-main .site-banner .banner-image > img {
+  padding: 7rem 0;
+  width: 90rem;
+}
+
+/* end banner */
+
+/* about */
+.site-main .about {
+  padding: 8rem 5rem;
+}
+.site-main .about .about-title h2 > span {
+  display: block;
+  font: normal bold 50px/60px var(--roboto);
+  letter-spacing: 20px;
+}
+.site-main .about .about-title .paragraph > p {
+  padding: 0.4rem 0;
+}
+/* end About */
+/* brand */
+.site-main .brand {
+  padding: 1rem 20rem;
+  margin-bottom: 4rem;
+}
+.site-main .brand .first-row .col-lg-4 {
+  display: flex;
+  justify-content: center;
+}
+.site-main .brand .first-row .col-lg-4 > .single-brand {
+  border: 1px solid var(--border-color);
+  text-align: center;
+  padding: 1.8rem 0rem;
+  margin: 0.9rem 0;
+  width: 180px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+.site-main .brand .first-row .col-lg-4 > .single-brand > img {
+  width: 50%;
+}
+.site-main .brand .first-row .col-lg-4 > .single-brand:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.1);
+}
+.site-main .brand .first-row .col-lg-4 > .single-brand:hover > img {
+  filter: brightness(0.15);
+}
+.site-main .brand .experience span {
+  display: block;
+}
+
+.site-main .brand-area .experience {
+  padding-left: 1rem;
+}
+
+.site-main .brand .experience .years-area {
+  background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+  padding: 2rem 0;
+  width: 40rem;
+  height: 18rem;
+  padding-left: 8rem;
+  position: relative;
+}
+.site-main .brand .experience .bg-panel {
+  position: absolute;
+  left: 550px;
+  top: calc(100% + 1130px);
+  background: #e029290a;
+  width: 400px;
+  height: 400px;
+  margin-left: 340px;
+  z-index: -1;
+}
+.site-main .brand .experience .years-area .years {
+  font: normal bold 84px/40px var(--roboto);
+  color: var(--primary-color2);
+  z-index: 2;
+}
+.site-main .brand .experience .years-area .years h2 > span {
+  font: normal 600 22px/30px var(--roboto);
+}
+.site-main .brand .experience .call-area {
+  padding-left: 10rem;
+}
+.call-now a {
+  text-decoration: none;
+}
+.call-icon {
+  rotate: 90deg;
+  padding-right: 1rem;
+}
+/* end brand */
+
+/* services */
+.site-main .services {
+  padding: 7rem 2rem;
+}
+.site-main .services .services-title {
+  padding: 0 14rem;
+}
+.site-main .services .services-title h1 {
+  font-size: 35px;
+}
+.site-main > .services .sevices-item {
+  background: rgba(248, 252, 253, 0.973);
+  padding: 2rem 0;
+  width: 16rem;
+  margin: 5rem 0.5rem;
+  transition: box-shadow 0.7s ease;
+}
+.site-main > .services .sevices-item:hover {
+  box-shadow: var(--box-shadow);
+}
+/* end services */
+
+/* project */
+.site-main .project {
+  padding: 4rem 0;
+}
+.site-main .project .button-group button {
+  background: transparent;
+  border: none;
+  font: normal 500 16px/130px var(--roboto);
+  text-transform: uppercase;
+}
+.site-main .project .button-group button + button {
+  padding-left: 3rem;
+}
+.site-main .project .grid .our-project > .title h4 {
+  font: normal 700 25px/12px var(--roboto);
+}
+
+.site-main .project .grid .our-project .img a:hover img {
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+/* end project */
+/* about-me */
+.site-main .about-me .about-me-title p {
+  padding: 1rem 7rem;
+}
+.site-main .about-me .client-item {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+.site-main .about-me .client {
+  background: #ffffff10;
+  box-shadow: var(--box-shadow);
+  margin: 3rem 0;
+}
+
+.site-main .about-me .client .client-img {
+  padding: 2rem;
+}
+.site-main .about-me .client .about-client {
+  padding-top: 2rem;
+}
+.site-main .about-me .client .about-client h4 {
+  font: normal 500 21px/20px var(--roboto);
+}
+.site-main .about-me .client .about-client p {
+  font: 14px;
+}
+.site-main .about-me .owl-carousel .client {
+  display: flex;
+  justify-content: center;
+  margin: 0 1.5rem;
+}
+.site-main .about-me .owl-carousel .owl-dots .owl-dot.active span {
+  background: var(--primary-color2);
+  width: 12px;
+  height: 12px;
+}
+/* end about-me */
+/* subscribe */
+.site-main .subscribe-us .subscribe {
+  background: url(../img/subscribe-bg.png) no-repeat;
+  padding: 10rem 0;
+  margin: 3rem auto;
+}
+.site-main .subscribe-us .subscribe .subscribe-title h4 {
+  font: normal 700 30px/30px var(--roboto);
+  color: whitesmoke;
+}
+.site-main .subscribe-us .subscribe .subscribe-title p {
+  color: whitesmoke;
+  padding: 1rem 4rem;
+}
+.site-main .subscribe-us .subscribe form .input-textbox input {
+  width: 400px;
+  height: 50px;
+  padding: 1.5rem 1rem;
+  border: 1px solid whitesmoke;
+  background: transparent;
+  color: whitesmoke;
+  font: normal 700 17px/20px var(--roboto);
+}
+.site-main .subscribe-us .subscribe form .input-textbox input::placeholder {
+  color: whitesmoke;
+}
+.site-main .subscribe-us .subscribe form .btn-submit button {
+  background: whitesmoke;
+  color: #000;
+  padding: 0.7rem 2rem;
+}
+/* end subscribe */
+
+/* footer */
+footer.footer {
+  padding: 5rem 0;
+  background: url(../img/footer-bg.png) no-repeat;
+}
+footer.footer .social h5 {
+  font: normal 500 23px/30px var(--roboto);
+}
+footer.footer .social a > i {
+  font-size: 22px;
+  padding: 2rem;
+  color: var(--border-color);
+}
+footer.footer .social a:hover > i {
+  color: var(--primary-color);
+}
+/* end footer */
